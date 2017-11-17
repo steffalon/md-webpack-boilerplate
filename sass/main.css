@@ -1,12 +1,10 @@
 html {
-  margin: 0;
-}
+  margin: 0; }
 
 .kop {
-  text-align: center;
-}
+  text-align: center; }
 
-.add{
+.add {
   background-color: black;
   color: white;
   width: 25%;
@@ -14,36 +12,31 @@ html {
   padding: 0.2em;
   text-align: center;
   border-top-right-radius: 2em;
-  border-top-left-radius: 2em;
-  input {
+  border-top-left-radius: 2em; }
+  .add input {
     width: calc(100% - 1%);
-    border: 0;
-  }
-  .add__button {
+    border: 0; }
+  .add .add__button {
     padding: 1em;
     background-color: gray;
-    color: white;
-  }
-  select {
+    color: white; }
+  .add select {
     width: calc(100% - 1%);
-    border: 0;
-  }
-}
+    border: 0; }
 
 .agenda {
   width: 100%;
-  margin: 0 auto;
-  display: flex;
-  &__lijst {
+  margin: 0, auto;
+  display: flex; }
+  .agenda .agenda__lijst {
     width: calc(100% / 7);
     border-right: 1px solid black;
     margin: 1em;
-    background-color: yellow;
-    &__blokEvent {
+    background-color: yellow; }
+    .agenda .agenda__lijst .agenda__lijst__blokEvent {
       border-bottom: 1px solid black;
       background-color: black;
       color: white;
-      padding: 1px;
-    }
-  }
-}
+      padding: 1px; }
+
+/*# sourceMappingURL=main.css.map */

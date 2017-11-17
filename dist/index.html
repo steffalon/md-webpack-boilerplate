@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Webpack basis template</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../sass/main.css" />
 </head>
+
 <body>
-  <div class="test test--enabled">ik zie hem</div>
-<script src="bundle.js"></script>
+    <div class="add">
+        <form method="post">
+            <h1 class="kop">Agenda</h1>
+            <h3>Voer hier een item in</h3>
+            <br>
+            <select class="add__selector" name="dag">
+                <option value="0">Maandag</option>
+                <option value="1">Dinsdag</option>
+                <option value="2">Woensdag</option>
+                <option value="3">Donderdag</option>
+                <option value="4">Vrijdag</option>
+                <option value="5">Zaterdag</option>
+                <option value="6">Zondag</option>
+            </select>
+            <br>
+            <input type="time" name="dateOfEvent">
+            <br>
+            <input type="text" name="bericht" placeholder="bericht">
+            <br>
+            <br>
+            <input type="submit" class="add__button" name="submit" value="Zet in de agenda">
+        </form>
+    </div>
+    <div class="agenda">
+        <div id="maandag" class='agenda__lijst'>
+            <h3>Maandag:</h3>
+            <div class="agenda__set"></div>
+        </div>
+        <div id="dinsdag" class='agenda__lijst'>
+            <h3>Dinsdag:</h3>
+            <div class="agenda__set"></div>
+        </div>
+        <div id="woensdag" class='agenda__lijst'>
+            <h3>Woensdag:</h3>
+            <div class="agenda__set"></div>
+        </div>
+        <div id="donderdag" class='agenda__lijst'>
+            <h3>Donderdag:</h3>
+            <div class="agenda__set"></div>
+        </div>
+        <div id="vrijdag" class='agenda__lijst'>
+            <h3>Vrijdag:</h3>
+            <div class="agenda__set"></div>
+        </div>
+        <div id="zaterdag" class='agenda__lijst'>
+            <h3>Zaterdag:</h3>
+            <div class="agenda__set"></div>
+        </div>
+        <div id="zondag" class='agenda__lijst'>
+            <h3>Zondag:</h3>
+            <div class="agenda__set"></div>
+        </div>
+    </div>
+    <div id="root"></div>
+    <script src="bundle.js"></script>
 </body>
+
 </html>
